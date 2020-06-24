@@ -9,9 +9,12 @@
 <script type="text/javascript" src="dine/dine.js"></script>
 <meta charset="UTF-8">
 <title>예약 화면</title>
+<link href="css/memberStyle.css" rel="stylesheet">
 </head>
 <body>
-${dine}을 받음
+<%@include file="../header.jsp" %>
+
+<div class="main">
 
 <h4>${dine.dine_name} 예약 페이지</h4>
 <form name="formm" method="post" action="reserveAction" id="formm">
@@ -73,8 +76,9 @@ ${dine}을 받음
 </tr>
 </table>
 </form>
-
-
+<br><br><br>
+</div>
 
 </body>
+<%@ include file="../footer.jsp" %>
 </html>

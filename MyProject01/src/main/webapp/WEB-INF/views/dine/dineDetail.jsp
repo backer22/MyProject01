@@ -68,6 +68,7 @@
 <br><br>
 <input type="button" value="뒤로" onclick="javascript:history.go(-1)">&nbsp;
 <input type="button" value="예약하기" onclick="location.href='reserve_form?dine_name=${dineVO.dine_name}'">
+<br><br><br>
 </div>
 
 </body>
