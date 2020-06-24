@@ -9,7 +9,9 @@
 <hr>
 
 <div class="footer">
-this is footer
+만든이: 성준헌<br>
+이메일: sungjoonheon@naver.com<br>
+<br><br>
 </div>
 
 </footer>
