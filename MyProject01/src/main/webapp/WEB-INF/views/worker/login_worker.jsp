@@ -14,7 +14,7 @@
 
 <div class="main">
 
-
+<h1>어드민 로그인</h1>
 <form id="formm" method="post" action="login_worker">
 <table>
 <tr>
@@ -26,14 +26,14 @@
 <td><input type="password" name="w_pwd" value="1234"></td>
 </tr>
 <tr>
-<td colspan="2">
+<td colspan="2"><br>
 <input type="submit" value="로그인" ></td>
 </tr>
 	
 </table>
 
 </form>
-
+<br><br>
 </div>
 
 </body>

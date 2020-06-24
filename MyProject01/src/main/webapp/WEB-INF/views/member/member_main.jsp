@@ -192,9 +192,9 @@ DineList (예약 가능한 식당 리스트) 해당 식당 클릭시 식당 상�
 
 <br>
 <a href="logout">로그 아웃</a>
-
-</div>
 <br><br><br>
+</div>
+
 </body>
 <%@ include file="../footer.jsp" %>
 </html>

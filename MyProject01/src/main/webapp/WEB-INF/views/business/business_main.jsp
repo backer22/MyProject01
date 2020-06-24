@@ -145,7 +145,7 @@ function displayMenuPerDay(){
 <th>예약 날짜</th>
 <th>예약 시간</th>
 <th>인원 수</th>
-<th>예약한 테이블 번호(없으면 0)</th>
+<th>테이블 번호 (0=미정)</th>
 <th>예약한 회원</th>
 <th>상세(삭제)</th>
 </tr>
@@ -175,7 +175,7 @@ function displayMenuPerDay(){
 <th>예약 날짜</th>
 <th>예약 시간</th>
 <th>인원 수</th>
-<th>예약한 테이블 번호(없으면 0)</th>
+<th>테이블 번호 (0=미정)</th>
 <th>예약한 회원</th>
 <th>상세(삭제)</th>
 </tr>
@@ -204,7 +204,7 @@ function displayMenuPerDay(){
 <th>예약 날짜</th>
 <th>예약 시간</th>
 <th>인원 수</th>
-<th>예약한 테이블 번호(없으면 0)</th>
+<th>테이블 번호 (0=미정)</th>
 <th>예약한 회원</th>
 <th>상세(삭제)</th>
 </tr>
@@ -284,6 +284,7 @@ function displayMenuPerDay(){
 
 <br>
 <a href="logout">로그 아웃</a>
+<br><br><br>
 </div>
 </body>
 <%@ include file="../footer.jsp" %>
