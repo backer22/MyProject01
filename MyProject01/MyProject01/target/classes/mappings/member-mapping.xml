@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MemberDAO">
+
+	<select id="loginMember" parameterType="member" resultType="member">
+		select * from member
+		where id=#{id} AND pwd=#{pwd}
+	</select>
+
+	<select id="getMemberById" resultType="member">
+		select * from member
+		where id=#{id}
+	</select>
+	
+	<insert id="insertMember">
+		insert into member
+		values(#{id},#{pwd},#{email},#{name},#{phone},#{businessyn})
+	</insert>
+	
+	<!-- getting reserves -->
+	<select id="oldReservesById" resultType="reserve">
+		select * from reserve
+		where r_date &lt; sysdate and id= #{id}
+		order by r_date desc
+	</select>
+	<select id="newReservesById" resultType="reserve">
+		select * from reserve
+		where r_date &gt; sysdate and id= #{id}
+		order by r_date desc
+	</select>
+	<select id="nowReservesById" resultType="reserve">
+		select * from reserve
+		where r_date = sysdate and id= #{id}
+		order by r_date desc
+	</select>
+	
+
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+

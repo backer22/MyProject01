@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="DineDAO">
+
+	<select id="getAllDine" resultType="dine">
+		SELECT * FROM dine
+	</select>
+
+	<insert id="insertDine">
+		INSERT INTO dine 
+		VALUES(#{dine_name},#{location},#{category},#{room},#{id},#{seat_image})
+	</insert>
+
+	<update id="updateDine">
+		UPDATE dine
+		SET
+		dine_name=#{dine_name}, location=#{location}, category=#{category}, room=#{room}, seat_image=#{seat_image}
+		WHERE
+		id = #{id}
+	</update>
+
+	<delete id="deleteDine" >
+		DELETE FROM dine WHERE
+		dine_name = #{dine_name}
+	</delete>
+	
+	<select id="getDine" resultType="dine">
+		select * from dine
+		where dine_name=#{dine_name}
+	</select>
+
+
+	
+
+</mapper>
+
+
+
+
+
+
+
+

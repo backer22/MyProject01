@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MenuDAO">
+
+	<select id="getMenuListByDineName" resultType="menu">
+		SELECT *
+		FROM menu
+		WHERE dine_name = #{dine_name}
+	</select>
+	
+	<select id="getMenuByName" resultType="menu">
+		select * from menu
+		where menu_name=#{menu_name}
+	</select>
+
+
+</mapper>

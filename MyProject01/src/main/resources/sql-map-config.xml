@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.green.biz.member.MemberVO" alias="member"/>
+		<typeAlias type="com.green.biz.worker.WorkerVO" alias="worker"/>
+		<typeAlias type="com.green.biz.dine.DineVO" alias="dine"/>
+		<typeAlias type="com.green.biz.dine.MenuVO" alias="menu"/>
+		<typeAlias type="com.green.biz.reserve.ReserveVO" alias="reserve"/>
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mappings/member-mapping.xml"/>
+		<mapper resource="mappings/dine-mapping.xml"/>
+		<mapper resource="mappings/reserve-mapping.xml"></mapper>
+		<mapper resource="mappings/worker-mapping.xml"/>
+		<mapper resource="mappings/menu-mapping.xml"/>
+		<mapper resource="mappings/business-mapping.xml"/>
+	</mappers>
+</configuration>
