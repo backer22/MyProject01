@@ -48,11 +48,12 @@
 </td>
 </tr>
 </table>
+<br>
 <input type="button" onclick="history.go(-1)" value="뒤로 가기">&nbsp;
 
 
 </form>
-
+<br><br>
 </div>
 
 </body>
