@@ -26,6 +26,7 @@
 <mvc:resources location="/WEB-INF/views/business/" mapping="/business/**"/>
 <mvc:resources location="/WEB-INF/resources/menu_image/" mapping="/menu_image/**"/>
 <mvc:resources location="/WEB-INF/resources/dine_image/" mapping="/dine_image/**"/>
+<mvc:resources location="/WEB-INF/resources/images/" mapping="/images/**"/>
 <mvc:resources location="/WEB-INF/resources/css/" mapping="/css/**"/>
 
 

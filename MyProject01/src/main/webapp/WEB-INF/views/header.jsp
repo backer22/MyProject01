@@ -16,8 +16,8 @@
 <div class="topnav">
 <header>
 	<div><!-- logo to index -->
-	<a href="index">
-		<img src="" width="150" height="150" alt="gotoIndex">
+	<a href="index" style="top: 0px">
+		<img src="images/logoSample.jpg" width="45" height="45" alt="gotoIndex">
 	</a>
 	</div>
 	<nav >

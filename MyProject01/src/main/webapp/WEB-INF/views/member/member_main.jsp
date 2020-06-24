@@ -78,7 +78,7 @@ function displayOldRes(){
 </div>
 
 
-<h5>다가오는 예약</h5>
+<h4>다가오는 예약</h4>
 <table border="1" id="newRes">
 <c:choose>
 
@@ -107,7 +107,7 @@ function displayOldRes(){
 </table>
 
 
-<h5>지나간 예약</h5>
+<h4>지나간 예약</h4>
 <button onclick="displayOldRes()">show/hide</button><br>
 <table border="1" id="oldRes" style="display: none">
 <c:choose>
@@ -172,11 +172,9 @@ function displayOldRes(){
 </table>
 <br><br>
 
-
-
-
 <br><br>
-DineList (예약 가능한 식당 리스트) 해당 식당 클릭시 식당 상세로
+
+<h4>등록된 식당 목록</h4>
 <table border="1" id="dineList">
 <c:forEach items="${dineList}" var="dineVO">
 <tr>

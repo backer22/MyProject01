@@ -9,7 +9,7 @@
 <hr>
 <div class="main">
 <br>
-<h1>this is index</h1>
+<h1>Welcome to Restaurant Reservation</h1>
 
 <c:choose>
 
