@@ -44,11 +44,11 @@
 <td>${dine.dine_name }</td>
 <td>${dine.location }</td>
 <td>${dine.category }</td>
-<td>${dine.room }</td>
+<td>${dine.room -1}</td>
 </tr>
 <tr>
 <th>테이블 위치</th>
-<td colspan="3"><img src="dine_image/${dine.seat_image }" alt=""></td>
+<td colspan="3"><img src="dine_image/${dine.seat_image }" alt="" width="200px" height="200px"></td>
 </tr>
 </table>
 <br><br>

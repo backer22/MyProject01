@@ -40,7 +40,7 @@ public class ReserveDateRoomController {
 		DineVO dine = dineService.getDine(vo.getDine_name());
 		//System.out.println("dine: "+dine);
 		//System.out.println("dine room: "+dine.getRoom());
-		Integer vacant[] =  new Integer[dine.getRoom()];// 전체 테이블, 값 0, null임 알고보니
+		Integer vacant[] =  new Integer[dine.getRoom()];// 전체 테이블,null
 		//System.out.println("vacant length: " + vacant.length);
 		for(int j=0; j<vacant.length;j++) {
 			vacant[j]=0;//초기화
@@ -77,7 +77,7 @@ public class ReserveDateRoomController {
 		System.out.println(rcount);
 		
 		DineVO dine = dineService.getDine(rvo.getDine_name());		
-		int dineSize = dine.getRoom();		// 예약 수용 가능 수
+		int dineSize = dine.getRoom()-1;		// 예약 수용 가능 수
 		System.out.println(dineSize);
 		
 		if (rcount >= dineSize) {

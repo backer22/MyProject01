@@ -75,6 +75,7 @@ ${reserve.room } 번 테이블
 <input type="hidden" name="r_seq" value="${reserve.r_seq }">
 <input type="submit" value="예약 삭제하기">
 <input type="button" onclick="history.go(-1)" value="뒤로 가기">&nbsp;
+<br><br><br>
 </form>
 
 </div>

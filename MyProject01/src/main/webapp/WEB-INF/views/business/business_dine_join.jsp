@@ -3,13 +3,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript" src="business/business.js"></script>
+<link href="css/memberStyle.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>새 식당 등록 화면</title>
 </head>
 <body>
+<%@include file="../header.jsp" %>
 
+<div class="main">
+<h1>식당 등록 화면</h1>
 <form method="POST" action="business_dine_join" enctype="multipart/form-data">
-<table>
+<table border="1">
 <tr>
 <th>식당명: </th>
 <td><input type="text" name="dine_name"></td>
@@ -32,13 +37,16 @@
 </tr>
 
 <tr>
-<td><input type="submit" value="식당 등록하기"></td>
+<td colspan="2"><input type="submit" value="식당 등록하기"></td>
 </tr>
 </table>
 </form>
-
+<br><br><br>
+</div>
 
 </body>
+
+<%@ include file="../footer.jsp" %>
 </html>
 
 
