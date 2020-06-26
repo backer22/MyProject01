@@ -191,7 +191,7 @@ function displayMenuPerDay(){
 <td><a href="business_reserveDetail?r_seq=${oldRes.r_seq}">상세 페이지 이동</a></td>
 </tr>
 </c:forEach>
-<c:if test="${empty oldRes }">
+<c:if test="${empty oldReserves }">
 <tr><td colspan="6">지난 예약이 없습니다</td></tr>
 </c:if>
 
